@@ -25,10 +25,7 @@ function submitLetter(e){
     e.preventDefault();
     element = element.querySelector(input);
     if(element.value === 'a') {
-        return 'win';
-    } else {
-        return 'lose';
-    }
+       console.log('win');
 }
 
 function randomChoice(array){
