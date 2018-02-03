@@ -1,5 +1,5 @@
 //variables
-const submit = document.querySelector('#submit-button');
+const submit = document.querySelector('#play-form');
 let win = 0;
 let lose = 0;
 let tries = 3;
@@ -23,9 +23,11 @@ submit.addEventListener('submit', submitLetter);
 //functions
 function submitLetter(e){
     e.preventDefault();
-    element = element.querySelector(input);
-    if(element.value === 'a') {
-       console.log('win');
+    const element = e.target.querySelector('input');
+    console.log(element.value);
+    if(element.value === randomLetter) {
+       console.log('win');  
+    }
 }
 
 function randomChoice(array){
