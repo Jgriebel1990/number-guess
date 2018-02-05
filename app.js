@@ -15,9 +15,9 @@ let randomLetter = randomChoice(letters);
 
 //eventListeners
 submit.addEventListener('submit', submitLetter);
-submit.addEventListener('submit', resetForm);
 
-//need to write code to be able to have more than one try, add the rest of the alphabet, 
+
+//to do list: need to write code to be able to have more than one try, add the rest of the alphabet, track wins
 
 //functions
 function submitLetter(e){
@@ -35,9 +35,5 @@ function submitLetter(e){
 function randomChoice(array){
     const rndIndex = Math.floor(Math.random() * array.length);
     return array[rndIndex];
-}
-
-function resetForm(e){
-
 }
 
