@@ -1,0 +1,21 @@
+.win-loss{
+    margin-right: 70rem;
+    margin-left: 1rem;
+    
+}
+
+.body-background{
+    background-color: rgb(6, 7, 73);
+}
+
+.head-text{
+    color: rgb(10, 92, 10);
+}
+
+.list{
+    background-color: lightcoral;
+}
+
+.pill {
+    background-color: darkred;
+}
