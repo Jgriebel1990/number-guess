@@ -1,12 +1,11 @@
 //variables
 const submit = document.querySelector('#play-form');
-let win = 0;
-let lose = 0;
-let tries = 3;
+const winCount =document.querySelector('#win');
 const letters = [ 'a', 'b', 'c', 
-    
-];
 
+];
+let win = 0;
+let tries = 3;
 let randomLetter = randomChoice(letters);
 
 
@@ -17,18 +16,20 @@ let randomLetter = randomChoice(letters);
 submit.addEventListener('submit', submitLetter);
 
 
-//to do list: need to write code to be able to have more than one try, add the rest of the alphabet, track wins
+
+//to do list: add the rest of the alphabet, track wins
 
 //functions
 function submitLetter(e){
     const element = e.target.querySelector('input');
     console.log(element.value);
+    event.preventDefault();
     if(element.value === randomLetter) {
        window.alert('you win');
+       winCount.textContent = win + 1;
        return 'You Win!!';  
-    }
-    if(element.value !== randomLetter) {
-        window.alert('you lose');
+    } else {
+        alert('Youre garbage lul');
     }
 }
 
