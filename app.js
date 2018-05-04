@@ -1,8 +1,8 @@
 //variables
 const submit = document.querySelector('#play-form');
 const winCount = document.querySelector('#win');
-const letters = [ 'a', 'b', 'c', 'd', 'e', 'f','g','h','i','j','k','l','m',
-                  'n','o','p','q','r','s','t','u','v','w','x','z'
+const letters = [ 'a', 'b', 'c', 'd', 'e', 'f', 'g',' h', 'i', 'j', 'k', 'l', 'm', 
+                  'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'z'
 ];
 let win = 0;
 let tries = 3;
